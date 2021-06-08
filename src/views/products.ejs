@@ -1,0 +1,47 @@
+<%-include('partials/_header');-%>
+
+<!-- <pre><%= data[0] %> </pre> -->
+
+
+<!-- Code........html -->
+
+<div class="jumbotron">
+            <div class="container-info">
+                <h1 class="text-center">Busca tu Snack y trago</h1>
+            </div>
+            <form class="d-flex">
+                <div class="container-fluid">
+                    <div class="row" id="resultado"></div>
+                    <button class="btn btn-outline-danger" id="name" type="submit">Buscalo Aquí</button>
+                
+            </form>
+            </div>
+        </div>
+
+      
+            <% if (data)  { %>
+
+              
+
+                <% for (var i = 0; i < data.length; i++ ) { %>
+                    
+                <div class="row">
+                   <div class="col-sm-4" id="resultado">
+                    <div class="card style"> 
+                        <img src="<%=  data[i].url_image %>"  class="class-image-top img-fluid"/>
+                        <div class="card-body">
+                          <h4 class="card-title"><%= data[i].name %></h4> 
+                        <p class="card-text"> Precio $ <%= data[i].price %></p>
+                        <p class="card-text"> Descuento % <%= data[i].discount %></p>
+                    </div>
+                </div>
+            </div>
+              <% } %> 
+           <% } %> 
+        </div>
+
+
+
+
+
+<%-include('partials/_footer');-%>
