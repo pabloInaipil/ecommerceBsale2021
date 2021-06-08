@@ -11,7 +11,7 @@ const app = express();
 const productsRoutes = require('./routes/products');
 
 //settting 
-app.set('port', process.env.PORT || 4000);
+app.set('port', process.env.PORT || 3000);
 app.set('view engine', 'ejs' );
 app.set('views', path.join(__dirname, 'views'));
 
@@ -36,5 +36,5 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // starting the server
 app.listen(app.get ('port'), () => { 
-    console.log('Server on port 4000');
+    console.log('Server on port 3000');
 });
