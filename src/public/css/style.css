@@ -37,12 +37,7 @@ body {
 
 }
 
-/* .row {
-  grid-template-columns: repeat(6, 1fr);
-  grid-gap: 1.5rem;
-  grid-row-gap: 1.5em;
-  display: grid;
-} */
+
 
 .class-image-top {
   grid-template-columns: 1fr 2fr;
