@@ -1,5 +1,5 @@
 <%-include('partials/_header');-%>
- <pre><%= data[0] %> </pre> 
+<pre><%= data[0] %> </pre>
 
 <% if (data)  { %>
 
@@ -8,15 +8,15 @@
     <div class="col-sm-6">
         <div class="card" style="width: 18rem;">
 
-        <img src="<%=  data[i].url_image %>" class="class-image-top" />
-        <div class="card-body">
-            <h4 class="card-title"><%= data[i].name %></h4>
-            <p class="card-text"> Precio $ <%= data[i].price %></p>
-            <p class="card-text"> Descuento <%= data[i].discount %> %</p>
-        </div>
+            <img src="<%=  data[i].url_image %>" class="class-image-top" />
+            <div class="card-body">
+                <h4 class="card-title"><%= data[i].name %></h4>
+                <p class="card-text"> Precio $ <%= data[i].price %></p>
+                <p class="card-text"> Descuento <%= data[i].discount %> %</p>
+            </div>
 
+        </div>
     </div>
-</div>
 </div>
 <% } %>
 <% } %>

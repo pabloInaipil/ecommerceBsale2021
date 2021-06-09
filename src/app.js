@@ -12,13 +12,15 @@ const productsRoutes = require('./routes/products');
 
 //settting 
 app.set('port', process.env.PORT || 3000);
-app.set('view engine', 'ejs' );
+app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
 
 //middleweares
 app.use(morgan('dev'));
-app.use(myConnection(mysql, { 
+
+// connection to mysql database
+app.use(myConnection(mysql, {
     host: 'mdb-test.c6vunyturrl6.us-west-1.rds.amazonaws.com',
     user: 'bsale_test',
     password: 'bsale_test',
@@ -36,6 +38,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 // starting the server
-app.listen(app.get ('port'), () => { 
+app.listen(app.get('port'), () => {
     console.log('Server on port 3000');
 });
