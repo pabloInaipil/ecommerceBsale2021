@@ -30,7 +30,7 @@ app.use(myConnection(mysql, {
 app.use('/', productsRoutes);
 
 
-// statics files 
+// statics file 
 app.use(express.static(path.join(__dirname, 'public')));
 
 
