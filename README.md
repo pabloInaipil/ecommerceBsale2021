@@ -14,7 +14,7 @@ Javascript.
 
 Lenguajes, frameworks y herramientas utilizadas en FrontEnd: 
 Vanilla JS
-jquery
+Motor de plantilla EJS (Javascript embedido)
 Bootstrap
 Css
 Html
